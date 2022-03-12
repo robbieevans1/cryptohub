@@ -1,3 +1,58 @@
-{{#each galleries as |gallery|}}
-{{> gallery-details}}
-{{/each}}
+{{!-- <ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol> --}}
+
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <div id="mainContainer" class="col-2">
+        <form id="cryptoForm">
+          <div id="searchDiv">
+              <label>
+                <h4 class="">Search for a Cryptocurreny:</h4>
+              </label>
+              <input
+                name="cryptoName"
+                id="cryptoName"
+                placeholder="Litecoin"
+                class="input"
+              />
+                <button type="submit" id="searchBtn">
+                  Search
+                </button>
+          </div>
+        </form>
+        
+
+      <div>
+        <h4>Cryptocurrencies: </h1>
+        <div id="searchContainer" class="align-middle">
+            <div id="mostRecentSearchContainer" class="is-small">
+              <!-- Container for the crypto just searched -->
+            </div>
+            <div id="CryptoSearchedContainer" class="is-medium">
+              <button class="searchedButtons swipe">Bitcoin</button> <br>
+              <button class="searchedButtons swipe">Litecoin</button>
+              <!-- currencies already searched for will be displayed here as buttons that, when clicked, will bring up the desired information -->
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    <div class="col-8">
+      One of three columns
+    </div>
+    <div class="col-2">
+      One of three columns
+    </div>
+  </div>
+</div>
