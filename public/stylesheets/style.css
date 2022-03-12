@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #225ca3 !important;
+    /* font-weight: bold;
+    font-size: 1.5rem; */
+    transition: color .1s;
+    text-decoration: none !important;
+  }
+
+  .style {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  a:hover {
+    color: #3486eb;
+  }
+  
+  button {
+    /* background-color: #225ca3; */
+    border: 0;
+    padding: 1%;
+    /* margin: 1% 2% !important; */
+    color: rgb(20, 64, 158);
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #225ca3;
+    color: white;
+  }
+
+  #searchBtn:hover {
+    background-color: white;
+    color: #225ca3;
+    outline: 1px #225ca3 solid;
+  }
+  
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  textarea, input {
+    margin: 1% 2% !important;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid #3486eb;
+  }
+
+  #cryptoName {
+    width: 85%;
+  }
+
+  #priceChart {
+    width: 100%;
+    height: 100%;;
+  }
+
+  #middleRow {
+    margin-bottom: 5%;
+  }
+
+  
+  textarea {
+    min-width: 40%;
+    min-height: 100px;
+  }
+  
+  form > div {
+    margin-bottom: 2%;
+  }
+  #searchDiv {
+    margin-bottom: 60%;
+  }
+
+  form label {
+    display: block;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    /* max-width: 1325px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+/*   
+  #mainContainer {
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+  }  */
+
+  h4 {
+    color: #225ca3 !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bolder !important;
+  }
+  
+  /* #currencyData {
+    outline: 1px #225ca3 solid;
+  } */
+
+  #postContainer {
+    margin-top: 1.5%;
+    height: 50vh;
+    width: 60vw;
+    padding: 1%;
+  }
+
+  #postRow {
+    height: 80%;
+    overflow: auto;
+  }
+  
+  
+  
+  header {
+    border-bottom: 1px solid #ccc;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+  }
+  
+  header h1 {
+    font-size: 1.5em;
+  }
+  
+  main {
+    flex: 1;
+    padding: .5% .5%;
+    display: inline !important;
+  }
+
+  #searchBtn {
+    width: 65%;
+    margin: 1% 2% !important;
+    background-color: #225ca3;
+    color: white;
+  }
+
+  .searchedButtons {
+    width: 100%;
+    margin-bottom: 3%;
+    box-shadow: 1px 1px 2px;
+  }
+
+
+  
+  .btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #225ca3;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+  }
+  
+  .btn-no-style:hover {
+    background: none;
+    color: #3486eb;
+  }
+  
+  .delete-post-btn {
+    background-color: #d41414;
+  }
+  
+  .delete-post-btn:hover {
+    background-color: #ff643d;
+  }
+  
+  .post {
+    margin-bottom: 2%;
+    line-height: 150%;
+  }
+  
+  span {
+    font-family:'Roboto', sans-serif;
+  }
+
+  #newsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleDiv {
+    
+    border-bottom: 1px dotted #225ca3;
+    box-shadow: inset 0 -0.5px 0 0 #225ca3, 0 0.5px 0 0 #225ca3;
+	/* margin-bottom: 1px; */
+  }
+
+  .post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: #7d7d7d;
+    font-family:'Roboto', sans-serif;
+  }
+  
+  .edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+  }
+  
+  .upvote-btn {
+    background-color: #197d0f;
+    transition: background-color .1s;
+  }
+  
+  .upvote-btn:hover {
+    background-color: #1f9c13;
+  }
+  
+  .comment-form {
+    margin-bottom: 5%;
+  }
+  
+  .comment {
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .comment:nth-child(odd) {
+    background-color: #fff5eb;
+  }
+  
+  .comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+  }
+  
+  .new-post-form input {
+    width: 300px;
+  }
+  
+  .edit-post-form {
+    margin-bottom: 5%;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex !important;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }

@@ -1,0 +1,167 @@
+{{!-- <ol class="post-list">
+  {{#each posts as |post|}}
+  <li>
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol> --}}
+
+<div class="container-fluid h-100">
+  <div class="row h-100">
+
+    <div id="mainContainer" class="col-2">
+        <form id="cryptoForm">
+          <div id="searchDiv">
+              <label>
+                <h5 class="">Search for a Cryptocurreny:</h5>
+              </label>
+              <input
+                name="cryptoName"
+                id="cryptoName"
+                placeholder="Litecoin"
+                class="input"
+              />
+                <button type="submit" id="searchBtn">
+                  Search
+                </button>
+          </div>
+        </form>
+      <div>
+        <h5>Cryptocurrencies: </h5>
+        <div id="searchContainer" class="align-middle">
+            <div id="mostRecentSearchContainer" class="is-small">
+              <!-- Container for the crypto just searched -->
+            </div>
+            <div id="CryptoSearchedContainer" class="is-medium">
+              <button class="searchedButtons swipe">Bitcoin</button> <br>
+              <button class="searchedButtons swipe">Litecoin</button>
+              <!-- currencies already searched for will be displayed here as buttons that, when clicked, will bring up the desired information -->
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <div id="currencyData" class="container-fluid h-60">
+        <div class="row">
+          <div id="middleRow" class="col-9">
+            <img id="priceChart" src="../images/stockchart.png" alt="priceChart">
+          </div>
+          <div class="col-3">
+            <h4 id="price">Price Data</h4>
+              <ul>
+                <li>Market Cap</li> <br>
+                <li>Price Change (24 hr)</li> <br>
+                <li>Other Data...</li> <br>
+                <li>Other Data...</li> <br>
+                <li>Other Data...</li> <br>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="postContainer" class="container-fluid">
+        <h4>Discussion: </h4>
+        <div class="row" id="postRow">
+          <ol>
+            <li>
+              <article class="post">
+                <div class="title">
+                  <a href="" target="_blank">title</a>
+                  <span>url</span>
+                </div>
+                <div class="meta">
+                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
+                  |
+                  <p># of comments</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="post">
+                <div class="title">
+                  <a href="" target="_blank">title</a>
+                  <span>url</span>
+                </div>
+                <div class="meta">
+                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
+                  |
+                  <p># of comments</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="post">
+                <div class="title">
+                  <a href="" target="_blank">title</a>
+                  <span>url</span>
+                </div>
+                <div class="meta">
+                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
+                  |
+                  <p># of comments</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="post">
+                <div class="title">
+                  <a href="" target="_blank">title</a>
+                  <span>url</span>
+                </div>
+                <div class="meta">
+                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
+                  |
+                  <p># of comments</p>
+                </div>
+              </article>
+            </li>
+          </ol>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2">
+      <h4>Related News: </h4>   
+        <div id="newsContainer" class="h-80">      
+            <div class="articleDiv">
+              <a class="articleTitle" href="">2 Top Cryptocurrencies To Buy and Hold Forever</a>
+              <div>
+                <span>THE MOTLEY FOOL</span>
+                <span> • </span>
+                <span>3/09/2022</span>
+              </div>
+            </div>
+            <div class="articleDiv">
+              <a class="articleTitle" href="">The First Crypto War May Lead to Lasting Peace</a>
+              <div>
+                <span>COINDESK</span>
+                <span> • </span>
+                <span>3/09/2022</span>
+              </div>
+            </div>
+            <div class="articleDiv">
+              <a class="articleTitle" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+              <div>
+                <span>Lorem Lorem.</span>
+                <span> • </span>
+                <span>3/09/2022</span>
+              </div>
+            </div>
+            <div class="articleDiv">
+              <a class="articleTitle" href=""> Voluptatem tenetur assumenda laborum fugiat, iusto repellat similique!</a>
+              <div>
+                <span>Lorem, ipsum dolor.</span>
+                <span> • </span>
+                <span>3/09/2022</span>
+              </div>
+            </div>
+        </div> 
+          
+         
+      </div>
+    </div>
+  </div>
+</div>
