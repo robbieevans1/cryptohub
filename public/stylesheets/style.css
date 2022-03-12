@@ -12,9 +12,10 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #225ca3 !important;
     font-weight: bold;
     transition: color .1s;
+    text-decoration: none !important;
   }
   
   a:hover {
@@ -34,8 +35,14 @@
   }
   
   button:hover {
-    background-color: #225ca3;;
+    background-color: #225ca3;
     color: white;
+  }
+
+  #searchBtn:hover {
+    background-color: white;
+    color: #225ca3;
+    outline: 1px #225ca3 solid;
   }
   
   .post-list {
@@ -116,7 +123,8 @@
 
   .searchedButtons {
     width: 100%;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
+    box-shadow: 1px 1px 2px;
   }
 
 
