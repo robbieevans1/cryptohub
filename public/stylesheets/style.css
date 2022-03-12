@@ -119,12 +119,20 @@
     font-weight: bolder !important;
   }
   
-  #currencyData {
+  /* #currencyData {
     outline: 1px #225ca3 solid;
-  }
+  } */
 
   #postContainer {
     margin-top: 1.5%;
+    height: 50vh;
+    width: 60vw;
+    padding: 1%;
+  }
+
+  #postRow {
+    height: 80%;
+    overflow: auto;
   }
   
   
@@ -193,10 +201,27 @@
     line-height: 150%;
   }
   
+  span {
+    font-family:'Roboto', sans-serif;
+  }
+
+  #newsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articleDiv {
+    
+    border-bottom: 1px dotted #225ca3;
+    box-shadow: inset 0 -0.5px 0 0 #225ca3, 0 0.5px 0 0 #225ca3;
+	/* margin-bottom: 1px; */
+  }
+
   .post .title span {
     font-style: italic;
     font-size: 90%;
     color: #7d7d7d;
+    font-family:'Roboto', sans-serif;
   }
   
   .edit-link {
