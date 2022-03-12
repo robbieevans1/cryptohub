@@ -4,10 +4,27 @@
   
   body, html {
     height: 100%;
+    max-height: 100vh;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     color: #333;
+  }
+
+  main {
+    max-height: 100vh;
+  }
+
+  #parent {
+    max-height: 100vh;
+  }
+
+  #parentRow {
+    max-height: 100vh;
+  }
+
+  #leftContainer, #middleContainer, #rightcontainer {
+    max-height: 90vh;
   }
   
   a {
@@ -67,9 +84,9 @@
     border: 1px solid #3486eb;
   }
 
-  #cryptoName {
+  /* #cryptoName {
     width: 85%;
-  }
+  } */
 
   #priceChart {
     width: 100%;
@@ -90,7 +107,9 @@
     margin-bottom: 2%;
   }
   #searchDiv {
+    margin-top: 10%;
     margin-bottom: 60%;
+    text-align: center;
   }
 
   form label {
@@ -99,10 +118,10 @@
   
   .wrapper {
     width: 100%;
-    min-height: 100%;
-    /* max-width: 1325px; */
+    /* min-height: 100%; */
+    max-height: 100vh;
     margin: 0 auto;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
   }
 
@@ -118,20 +137,21 @@
     font-size: 1.5rem;
     font-weight: bolder !important;
   }
-  
-  /* #currencyData {
-    outline: 1px #225ca3 solid;
-  } */
+
+  .center {
+    text-align: center;
+  }
 
   #postContainer {
-    margin-top: 1.5%;
-    height: 50vh;
+    /* margin-top: 1.5%; */
+    height: 30vh;
     width: 60vw;
     padding: 1%;
+    margin-left: 0 !important;
   }
 
   #postRow {
-    height: 80%;
+    height: 90%;
     overflow: auto;
   }
   
@@ -156,7 +176,7 @@
   }
 
   #searchBtn {
-    width: 65%;
+    width: 95%;
     margin: 1% 2% !important;
     background-color: #225ca3;
     color: white;

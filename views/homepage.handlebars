@@ -6,30 +6,32 @@
   {{/each}}
 </ol> --}}
 
-<div class="container-fluid h-100">
-  <div class="row h-100">
+<div id='parent' class="container-fluid h-100">
+  <div id="parentRow" class="row h-100">
 
-    <div id="mainContainer" class="col-2">
-        <form id="cryptoForm">
-          <div id="searchDiv">
-              <label>
-                <h5 class="">Search for a Cryptocurreny:</h5>
-              </label>
-              <input
-                name="cryptoName"
-                id="cryptoName"
-                placeholder="Litecoin"
-                class="input"
-              />
-                <button type="submit" id="searchBtn">
-                  Search
-                </button>
-          </div>
-        </form>
+    <div id="leftContainer" class="col-2">
+        
+          <form id="cryptoForm">
+            <div id="searchDiv">
+                <label>
+                  <h5 class="center">Search for a Cryptocurreny:</h5>
+                </label>
+                <input
+                  name="cryptoName"
+                  id="cryptoName"
+                  placeholder="Litecoin"
+                  class="input"
+                />
+                  <button type="submit" id="searchBtn">
+                    Search
+                  </button>
+            </div>
+          </form>
+
       <div>
         <h5>Cryptocurrencies: </h5>
-        <div id="searchContainer" class="align-middle">
-            <div id="mostRecentSearchContainer" class="is-small">
+        <div id="searchedContainer" class="align-middle">
+            <div id="mostRecentSearchedContainer" class="is-small">
               <!-- Container for the crypto just searched -->
             </div>
             <div id="CryptoSearchedContainer" class="is-medium">
@@ -41,7 +43,7 @@
       </div>
     </div>
 
-    <div class="col-8">
+    <div id="middleContainer" class="col-8">
       <div id="currencyData" class="container-fluid h-60">
         <div class="row">
           <div id="middleRow" class="col-9">
@@ -116,6 +118,19 @@
                 </div>
               </article>
             </li>
+            <li>
+              <article class="post">
+                <div class="title">
+                  <a href="" target="_blank">title</a>
+                  <span>url</span>
+                </div>
+                <div class="meta">
+                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
+                  |
+                  <p># of comments</p>
+                </div>
+              </article>
+            </li>
           </ol>
 
 
@@ -123,7 +138,7 @@
       </div>
     </div>
 
-    <div class="col-2">
+    <div id="rightContainer" class="col-2">
       <h4>Related News: </h4>   
         <div id="newsContainer" class="h-80">      
             <div class="articleDiv">
