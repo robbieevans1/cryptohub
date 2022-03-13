@@ -9,5 +9,6 @@ router.use('/users', userRoutes);
 router.use('/posts', postRoutes);
 router.use('/comments', commentRoutes);
 router.use('/specific-coin', coinRoutes);
+router.use('/news', newsRoutes);
 
 module.exports = router;
