@@ -220,6 +220,10 @@
     margin-bottom: 2%;
     line-height: 150%;
   }
+
+  .card{
+    margin-bottom: 1.5%;
+  }
   
   span {
     font-family:'Roboto', sans-serif;

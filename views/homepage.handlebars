@@ -9,7 +9,7 @@
 <div id='parent' class="container-fluid h-100">
   <div id="parentRow" class="row h-100">
 
-    <div id="leftContainer" class="col-2">
+    <div id="leftContainer" class="col-12 col-lg-3 col-xl-2">
         
           <form id="cryptoForm">
             <div id="searchDiv">
@@ -26,9 +26,8 @@
                     Search
                   </button>
             </div>
-          </form>
-
-      <div>
+          </form>     
+          <div>
         <h5>Cryptocurrencies: </h5>
         <div id="searchedContainer" class="align-middle">
             <div id="mostRecentSearchedContainer" class="is-small">
@@ -43,117 +42,58 @@
       </div>
     </div>
 
-    <div id="middleContainer" class="col-8">
-      <div id="currencyData" class="container-fluid h-60">
-        <div class="row">
-          <div id="middleRow" class="col-9">
-            <table class="table table-bordered" >
-              <thead>
-                <tr>
-                  <th scope="col">UUID</th>
-                  <th scope="col">BTC Price</th>
-                  <th scope="col">Rank</th>
-                  <th scope="col">Tier</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Price</th>
-                  <th scope="col">Symbol</th>
-                </tr>
-              </thead>
-              <tbody id="data">
-                
-              </tbody>
-            </table>
+    <div id="middleContainer" class="col-12 col-lg-9 col-xl-8">
+      <div id="currencyData" class="container-fluid h-100">
+        <div class="row h-100">
+          <div id="middleRow" class="col-12 d-flex flex-wrap justify-content-around align-content-start">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bitcoin</h5>
+                <a href="#" class="btn">View price details</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Litecoin</h5>
+                <a href="#" class="btn">View price details</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dogecoin</h5>
+                <a href="#" class="btn">View price details</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ethereum</h5>
+                <a href="#" class="btn">View price details</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tether</h5>
+                <a href="#" class="btn">View price details</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">XRP</h5>
+                <a href="#" class="btn">View price details</a>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <h4 id="price">Price Data</h4>
-              <ul>
-                <li>Market Cap</li> <br>
-                <li>Price Change (24 hr)</li> <br>
-                <li>Other Data...</li> <br>
-                <li>Other Data...</li> <br>
-                <li>Other Data...</li> <br>
-              </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id="postContainer" class="container-fluid">
-        <h4>Discussion: </h4>
-        <div class="row" id="postRow">
-          <ol>
-            <li>
-              <article class="post">
-                <div class="title">
-                  <a href="" target="_blank">title</a>
-                  <span>url</span>
-                </div>
-                <div class="meta">
-                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
-                  |
-                  <p># of comments</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="post">
-                <div class="title">
-                  <a href="" target="_blank">title</a>
-                  <span>url</span>
-                </div>
-                <div class="meta">
-                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
-                  |
-                  <p># of comments</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="post">
-                <div class="title">
-                  <a href="" target="_blank">title</a>
-                  <span>url</span>
-                </div>
-                <div class="meta">
-                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
-                  |
-                  <p># of comments</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="post">
-                <div class="title">
-                  <a href="" target="_blank">title</a>
-                  <span>url</span>
-                </div>
-                <div class="meta">
-                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
-                  |
-                  <p># of comments</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="post">
-                <div class="title">
-                  <a href="" target="_blank">title</a>
-                  <span>url</span>
-                </div>
-                <div class="meta">
-                  vote count by user on created date Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, repudiandae.
-                  |
-                  <p># of comments</p>
-                </div>
-              </article>
-            </li>
-          </ol>
-
-
         </div>
       </div>
     </div>
 
-    <div id="rightContainer" class="col-2">
+    <div id="rightContainer" class="col-12 col-lg-12 col-xl-2">
       <h4>Related News: </h4>   
         <div id="newsContainer" class="h-80">      
             <div class="articleDiv">
