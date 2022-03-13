@@ -226,15 +226,18 @@
     line-height: 150%;
   }
 
-  /* .card{
+  /* /* .card{
     margin-bottom: 1.5%;
-  }
+  } */
 
-  .card-img-top {
+  /* .card-img-top {
     width: 100%;
     height: 10vw;
     object-fit: cover;
-} */
+} */ */
+.heart {
+  position: relative;
+}
 
 .heartBtn {
   font-size: 48px;
@@ -242,17 +245,21 @@
   background-color: white;
   border-radius: 50%;
   color: rgb(230, 53, 53);
+  right: 0;
+  position: absolute;
+  right: 7px;
+  bottom: 5px;
 }
 
 .heartBtn:hover {
   background-color: rgb(230, 53, 53);
 }
 
-.priceDetails{
+/* .priceDetails{
   position: absolute;
   left: 20px;
   bottom: 39px;
-}
+} */
   
   span {
     font-family:'Roboto', sans-serif;

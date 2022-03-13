@@ -55,8 +55,9 @@ router.get('/:id', (req, res) => {
 });
 
 //sign up user/create user
-router.post('/', withAuth, (req, res) => {
+router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  console.log("Hello")
   User.create({
     username: req.body.username,
     email: req.body.email,
@@ -67,7 +68,7 @@ router.post('/', withAuth, (req, res) => {
       req.session.user_id = dbUserData.id;
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
-  
+      console.log(dbUserData)
       res.json(dbUserData);
     });
   })
@@ -78,7 +79,7 @@ router.post('/', withAuth, (req, res) => {
 });
 
 //login user
-router.post('/login', withAuth, (req, res) => {
+router.post('/login', (req, res) => {
   User.findOne({
     where: {
       email: req.body.email
