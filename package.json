@@ -29,9 +29,10 @@
     "express-session": "^1.17.2",
     "express-sessions": "^1.0.6",
     "handlebars": "^4.7.7",
+    "jwt-decode": "^3.1.2",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
+    "react": "^17.0.2",
     "sequelize": "^6.17.0"
-  },
-  "devDependencies": {}
+  }
 }
