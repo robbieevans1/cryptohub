@@ -1,32 +1,30 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6  d-flex justify-content-center">
+      <div class="card" style="width: 20rem; height:20rem; margin-bottom:5%">
+        <h5 class="card-header login">Login</h5>
+          <div class="card-body">
+            <form class="login-form" style="text-align: center; margin-top: 15%">
+              <input type="email" id="email-login" placeholder="Email">
+              <input type="password" id="password-login" placeholder="Password"><br>
+              <button style="margin-top: 5%; margin-left: 1%; width: 50%">Login</button>
+            </form>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center">
+      <div class="card" style="width: 20rem; height:20rem; margin-bottom:5%">
+        <h5 class="card-header login">Sign Up</h5>
+          <div class="card-body">
+            <form class="signup-form" style="text-align: center; margin-top: 15%">
+              <input type="text" id="username-signup" placeholder="Username">
+              <input type="text" id="email-signup" placeholder="Email">
+              <input type="text" id="password-signup" placeholder="Password"><br>
+              <button style="margin-top: 5%; margin-left: 1%; width: 50%">Sign Up</button>
+            </form>
+          </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
-</form>
-<script src="/javascript/login.js"></script>
+</div>
