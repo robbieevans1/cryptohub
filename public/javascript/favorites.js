@@ -1,9 +1,7 @@
 let cryptoButtonContainer = document.querySelector('#CryptoSearchedContainer')
 
 function specificCoinNav () {
-    // console.log(coinText);
-
-    console.log(document.location.replace('/specific/coin/'));
+    document.location.replace('/specific/coin/');
 
 }
 
