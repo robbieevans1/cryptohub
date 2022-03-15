@@ -6,8 +6,8 @@
   {{/each}}
 </ol> --}}
 
-<div id='parent' class="container-fluid h-100">
-  <div id="parentRow" class="row h-100">
+<div id='parent' class="container-fluid">
+  <div id="parentRow" class="row">
 
     <div id="leftContainer" class="col-12 col-lg-3 col-xl-2">
         
@@ -36,8 +36,8 @@
                   <!-- Container for the crypto just searched -->
               </div>
               <div id="CryptoSearchedContainer" class="is-medium">
-                <button class="searchedButtons swipe">Bitcoin</button> <br>
-                <button class="searchedButtons swipe">Litecoin</button>
+                {{!-- <button class="searchedButtons swipe">Bitcoin</button> <br>
+                <button class="searchedButtons swipe">Litecoin</button> --}}
                 <!-- currencies already searched for will be displayed here as buttons that, when clicked, will bring up the desired information -->
               </div>
             </div>
@@ -46,14 +46,14 @@
     </div>
 
     <div id="middleContainer" class="col-12 col-lg-9 col-xl-8">
-      <div id="currencyData" class="container-fluid h-100">
-        <div class="row h-100">
+      <div id="currencyData" class="container-fluid">
+        <div class="row">
           <div id="middleRow" class="col-12 d-flex flex-wrap justify-content-around align-content-start">
             <div class="card" style="width: 18rem;">
               <img src="/images/bitcoin.png" class="card-img-top" alt="bitcoin logo">
               <div class="card-body">
                 <h5 class="card-title">Bitcoin</h5>
-                <a class="priceDetails" href="#">View price details</a>
+                <a class="priceDetails" href="/specific/coin/">View price details</a>
                 {{#if loggedIn}}
                 <div class="heart"><button class="heartBtn">♡</button></div>
                 {{/if}}
@@ -63,7 +63,7 @@
               <img src="/images/litecoin.jpg" class="card-img-top" alt="litecoin logo">
               <div class="card-body">
                 <h5 class="card-title">Litecoin</h5>
-                <a class="priceDetails" href="#">View price details</a>
+                <a class="priceDetails" href="/specific/coin/">View price details</a>
                 {{#if loggedIn}}
                 <div class="heart"><button class="heartBtn">♡</button></div>
                 {{/if}}
@@ -73,7 +73,7 @@
               <img src="/images/dogecoin2.png" class="card-img-top" alt="dogecoin logo">
               <div class="card-body">
                 <h5 class="card-title">Dogecoin</h5>
-                <a class="priceDetails" href=`/specific-coin/${id}`>View price details</a>
+                <a class="priceDetails" href='/specific/coin/'>View price details</a>
                 {{#if loggedIn}}
                 <div class="heart"><button class="heartBtn">♡</button></div>
                 {{/if}}
@@ -83,7 +83,7 @@
               <img src="/images/eth.svg" class="card-img-top" alt="ethereum logo">
               <div class="card-body">
                 <h5 class="card-title">Ethereum</h5>
-                <a class="priceDetails" href="#">View price details</a>
+                <a class="priceDetails" href="/specific/coin/">View price details</a>
                 {{#if loggedIn}}
                 <div class="heart"><button class="heartBtn">♡</button></div>
                 {{/if}}
@@ -93,7 +93,7 @@
               <img src="/images/tether.png" class="card-img-top" alt="tether cryptocurrency logo">
               <div class="card-body">
                 <h5 class="card-title">Tether</h5>
-                <a class="priceDetails" href="#">View price details</a>
+                <a class="priceDetails" href="/specific/coin/">View price details</a>
                 {{#if loggedIn}}
                 <div class="heart"><button class="heartBtn">♡</button></div>
                 {{/if}}
@@ -103,7 +103,7 @@
               <img src="/images/xrp.png" class="card-img-top" alt="xrp logo">
               <div class="card-body">
                 <h5 class="card-title">XRP</h5>
-                <a class="priceDetails" href="#">View price details</a>
+                <a class="priceDetails" href="/specific/coin/">View price details</a>
                 {{#if loggedIn}}
                 <div class="heart"><button class="heartBtn">♡</button></div>
                 {{/if}}
@@ -154,3 +154,5 @@
     </div>
   </div>
 </div>
+
+<script src="/javascript/favorites.js"></script>

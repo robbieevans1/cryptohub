@@ -3,29 +3,29 @@
   }
   
   body, html {
-    height: 100%;
-    max-height: 100vh;
+    /* height: 100%; */
+    /* max-height: 100vh; */
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     color: #333;
   }
 
-  main {
+  /* main {
     max-height: 100vh;
-  }
+  } */
 
-  #parent {
+  /* #parent {
     max-height: 100vh;
-  }
+  } */
 
-  #parentRow {
+  /* #parentRow {
     max-height: 100vh;
   }
 
   #leftContainer, #middleContainer, #rightcontainer {
     max-height: 90vh;
-  }
+  } */
   
   a {
     text-decoration: none;
@@ -39,6 +39,10 @@
   .style {
     font-weight: bold;
     font-size: 1.5rem;
+  }
+
+  .right  {
+    text-align: right;
   }
   
   a:hover {
@@ -112,8 +116,8 @@
     margin-bottom: 2%;
   }
   #searchDiv {
-    margin-top: 10%;
-    margin-bottom: 60%;
+    margin-top: 5%;
+    /* margin-bottom: 60%; */
     text-align: center;
   }
 
@@ -149,7 +153,7 @@
 
   #postContainer {
     /* margin-top: 1.5%; */
-    height: 30vh;
+    height: 45vh;
     width: 60vw;
     padding: 1%;
     margin-left: 0 !important;
@@ -331,7 +335,8 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-    position: absolute;
-  bottom: 0;
+    position: fixed; 
+    background-color: white;
+   bottom: 0;
   width: 100%;
   }
