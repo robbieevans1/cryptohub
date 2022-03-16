@@ -1,9 +1,14 @@
 let cryptoButtonContainer = document.querySelector('#CryptoSearchedContainer')
+let logoutText = document.querySelector('#logout');
+
 
 function loadButtons () {
     // if (localStorage.length !== 0) {
     //     searchContainerEl.classList.remove('is-invisible');
     // }
+
+    if (logoutText){
+    
 
     for (let i = 0; i < localStorage.length; i++) {
     let coinButton = document.createElement('button');
@@ -18,6 +23,7 @@ function loadButtons () {
 
     // id = storedCoins.id;
     // coinButton.id = id;
+    }
 }
 }
 
