@@ -13,26 +13,6 @@ const coindata = [
     coin_name: "dogecoin",
     user_id: 11,
   },
-  // {
-  //   coin_name: "dogecoin",
-  //   user_id: 11,
-  //
-  // },
-  // {
-  //   coin_name: "dogecoin",
-  //   user_id: 11,
-  //
-  // },
-  // {
-  //   coin_name: "dogecoin",
-  //   user_id: 11,
-  //
-  // },
-  // {
-  //   coin_name: "dogecoin",
-  //   user_id: 11,
-  //
-  // },
   {
     coin_name: "ethereum",
     user_id: 11,

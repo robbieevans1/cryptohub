@@ -12,10 +12,6 @@ let newButtonNavStorage = function specificCoinNav (e) {
     document.location.replace(`/specific-coin/${e.currentTarget.myParam}`);
     }
 
-
-
-
-
 function favoriteHandler () {
     let coinFavorite = (this.closest('.card-body'))
     let coinText = coinFavorite.children[0].innerText;
