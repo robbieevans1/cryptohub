@@ -52,6 +52,13 @@ Post.init(
         model: 'user',
         key: 'id'
       }
+    },
+    coin_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'coin',
+        key: 'id'
+      }
     }
   },
   {

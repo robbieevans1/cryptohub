@@ -1,23 +1,29 @@
+// const e = require("express");
+let id;
 let cryptoButtonContainer = document.querySelector('#CryptoSearchedContainer')
 
-function specificCoinNav () {
-    document.location.replace('/specific/coin/');
-
+let newButtonNav = function specificCoinNav () {
+    
+    document.location.replace(`/specific-coin/${id}`);
 }
 
 function favoriteHandler () {
     let coinFavorite = (this.closest('.card-body'))
     let coinText = coinFavorite.children[0].innerText;
 
-    console.log(coinFavorite);
+    id = coinFavorite.children[2].id;
+    // let id 
 
-    localStorage.setItem(JSON.stringify(coinFavorite), JSON.stringify(coinFavorite));
+    // localStorage.setItem(JSON.stringify(coinFavorite), JSON.stringify(coinFavorite));
 
     let coinButtonEl = document.createElement('button');
     coinButtonEl.textContent = coinText;
     coinButtonEl.classList.add('searchedButtons');
     cryptoButtonContainer.appendChild(coinButtonEl);
-    coinButtonEl.addEventListener('click', specificCoinNav)
+
+    
+
+    coinButtonEl.addEventListener('click', newButtonNav)
 };
 
 // coinButtonEl.addEventListener('click', specificCoinNav)

@@ -8,7 +8,7 @@ const coinRoutes = require('./coin-routes')
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/dashboard', dashboardRoutes);
-router.use('/specific/', coinRoutes)
+router.use('/specific-coin', coinRoutes)
 
 
 module.exports = router;
