@@ -328,6 +328,10 @@
   .edit-post-form {
     margin-bottom: 5%;
   }
+
+  .news-url {
+    padding-bottom: 5%;
+  }
   
   footer {
     border-top: 1px solid #ccc;
