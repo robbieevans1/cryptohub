@@ -100,7 +100,7 @@
     </div>
 
     <div id="rightContainer" class="col-12 col-lg-12 col-xl-2">
-      <h4>Related News: </h4>   
+      <h4>Search News By Cryptocurrency: </h4>   
         <div id="newsContainer" class="h-80">      
             <div class="articleDiv">
               <a class="articleTitle" href="">2 Top Cryptocurrencies To Buy and Hold Forever</a>
@@ -109,35 +109,30 @@
                 <span> • </span>
                 <span>3/09/2022</span>
               </div>
-            </div>
-            <div class="articleDiv">
-              <a class="articleTitle" href="">The First Crypto War May Lead to Lasting Peace</a>
-              <div>
-                <span>COINDESK</span>
-                <span> • </span>
-                <span>3/09/2022</span>
-              </div>
-            </div>
-            <div class="articleDiv">
-              <a class="articleTitle" href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-              <div>
-                <span>Lorem Lorem.</span>
-                <span> • </span>
-                <span>3/09/2022</span>
-              </div>
-            </div>
-            <div class="articleDiv">
-              <a class="articleTitle" href=""> Voluptatem tenetur assumenda laborum fugiat, iusto repellat similique!</a>
-              <div>
-                <span>Lorem, ipsum dolor.</span>
-                <span> • </span>
-                <span>3/09/2022</span>
+
+              <form action="" class="search">
+                <input
+                  name="cryptoName"
+                  id="cryptoName"
+                  placeholder="DogeCoin"
+                  class="newsInput"
+                />
+                <input type= "submit" id="searchBtn" value="Get Crypto News">
+                <div class="container">
+                  <ul class="news-list"></ul>
+
               </div>
             </div>
         </div> 
+                </div>
+              </form>
+              </form>
+
           
          
       </div>
     </div>
   </div>
 </div>
+
+<script src="/public/javascript/news.js"></script>
